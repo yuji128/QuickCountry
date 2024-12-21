@@ -1,0 +1,20 @@
+{
+    "name": "QuickCountry",
+    "version": "1.0",
+    "description": "Shws the country of the domain and provides a currency calculator",
+    "permissions": ["storage", "tabs", "activeTab"],
+    "background": {
+        "service_worker":"background.js"
+    },
+    "content_scripts": "content.js",
+    "action": {
+        "default_icon": {
+            "16": "QuickCountry16.png",
+            "24": "QuickCountry24.png",
+            "48": "QuickCountry48.png"
+        },
+        "default_title": "QuickCountry",
+        "default_ppoup": "popup.html"
+    },
+    "manifest_version": "3"
+}
